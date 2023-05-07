@@ -1,2 +1,2 @@
-# jitin-andrew-website
-A brand new website for shopping
+# careers-website
+A jobs and careers place for developers 
