@@ -1,2 +1,2 @@
-# littlepaws-website
+littlepaws-website
 A place to find your dream cat!
