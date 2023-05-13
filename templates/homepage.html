@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      DevCareers
-    </title>
-    <link rel = "stylesheet",href = "style.css"
+    <title>Little Paws</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit:cover;
+        margin-bottom: 16px;
+      }
+    </style>
   </head>
   <body>
-    <h1><center>DevCareers</center></h1>
-    <style>
-      h1 { color : teal;
-          font-family : times new roman;
-          font-style : italic;
-         }
-    </style>
-    <img src = "static/Developer.jpg" height = "320">
-    <h2 style = "color: navy; "> About us</h2>
-    
-    <p1>We focus on recruiting developers for building high performing web & mobile products that can be securely deployed in the cloud.</p1>
-
-    <h2>Jobs available: </h2>
-    <p1> Currently not available:( </p1> <br>
-    <br>
-
-    <button> contact us</button>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/cats.jpg" >
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">
+         Little Paws
+      </h1>
+      <div class="row" style="margin-bottom:32px">
+        <div class="col-md-6">
+      <p class="lead">
+        At Cats Sale, we are passionate about helping you find your purr-fect companion. Our wide selection of breeds includes the popular Siamese and Persian cats, as well as more rare and exotic breeds like the Bengal and the Sphinx. Our kittens are raised in a loving, nurturing environment, and come with thorough health checkups and up-to-date vaccinations. As cat lovers ourselves, we understand the importance of finding the right furry friend to fit your lifestyle. Let us help you find your new addition to the family!
+      </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/cats.jpg" style="height:320px;border-radius:4px;">
+        </div>
+      </div>
+      <h2 class="text-center mt-2 mb-4">Cats Available</h2>
+      <div>
+        {% for cats in cats %}
+          {% include 'catbreeds.html' %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+      <a class="btn btn-primary btn-lg" href="www.google.com">Contact Us</a>
+      </div>
+    </div>
+    {% include 'footer.html' %}
   </body>
 </html>

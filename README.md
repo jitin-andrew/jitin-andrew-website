@@ -1,2 +1,2 @@
-# careers-website
-A jobs and careers place for developers 
+# littlepaws-website
+A place to find your dream cat!
