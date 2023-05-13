@@ -16,7 +16,7 @@ CATS = [{
   'id': 4,
   'title': 'British Shorthair',
   'location': 'San Francisco, USA',
-  'price': '$ 699'
+  'price': '$ 799'
 }]
 
 
