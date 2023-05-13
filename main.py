@@ -6,7 +6,7 @@ CATS = [{
   'id': 1,
   'title': 'Persian Cat',
   'location': 'Bengaluru, India',
-  'price': 'Rs. 8,000'
+  'price': 'Rs. 8,500'
 }, {
   'id': 2,
   'title': 'Bengal Cat',
